@@ -1,10 +1,27 @@
-Django==1.7c2
+Django==1.7
 Pillow==2.6.1
 coverage==3.7.1
 django-bootstrap-toolkit==2.15.0
 django-registration-redux==1.1
 wsgiref==0.1.2
 
+
+--bajar python27 de la pagina oficial e instalar.
+
+--cambiar las variables de entorno de windows para ejecutar python directamente desde
+el DOS
+
+--pip install virtualenv desde el directorio donde esta python.
+
+-- crear un ambiente en C. con >virtualenv prueba
+
+-- entrar por el dos hasta el directorio donde esta la carpeta, normalment C:\prueba\scripts
+   y luego darle activate para que aparezca el prompt: (prueba) C:\prueba\tangowd>
+
+-- desde alli instalar todos los paquetes necesarios con "pip install -r requirements.txt" este txt 
+   debe estar en el mismo directorio desde donde se esta tirando el comando
+
+-- una vez instalados los paquetes adicionales se procesde a instalar la aplicacion 
 
 
 pip install -r 
@@ -14,3 +31,4 @@ $ python manage.py migrate
 (prueba) C:\prueba\tangowd>python populate.py
 
 pip install virtualenv
+
