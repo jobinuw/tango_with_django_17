@@ -1,0 +1,48 @@
+--bajar python27 de la pagina oficial e instalar.
+
+
+
+--cambiar las variables de entorno de windows para ejecutar python directamente desde
+el DOS
+
+
+
+--pip install virtualenv desde el directorio donde esta python.
+
+
+
+-- crear un ambiente en C. con  >virtualenv prueba
+
+
+-- entrar por el dos hasta el directorio donde esta la carpeta, normalment C:\prueba\scripts
+  
+    y luego darle activate para que aparezca el prompt: (prueba) C:\prueba\tangowd>
+
+
+
+-- desde alli instalar todos los paquetes necesarios con "pip install -r requirements.txt" este txt 
+   
+    debe estar en el mismo directorio desde donde se esta tirando el comando
+
+
+
+-- una vez instalados los paquetes adicionales se procesde a instalar la aplicacion 
+
+  
+
+pip install -r requirements.txt
+  
+
+$ python manage.py migrate
+
+
+  
+  (prueba) C:\prueba\tangowd>python populate.py
+
+   
+pip install virtualenv
+
+
+
+>>>>>>> bfe39640ceae3015cf0c49176c04d4fb0f0b4b0f
+
