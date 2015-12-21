@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from rango.models import Category,Page, LANGUAGE_CHOICES, STYLE_CHOICES
+from rango.models import Category,Page
 
 
 class SnippetSerializer(serializers.ModelSerializer):
