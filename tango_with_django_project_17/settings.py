@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
-INSTALLED_APPS = (
+INSTALLED_APPS = {
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,7 +46,10 @@ INSTALLED_APPS = (
     'rango',
     'registration',
     'bootstrap_toolkit',
-)
+    'rest_framework',
+    'rest',
+    'snippets',
+}
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -61,6 +64,14 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'tango_with_django_project_17.urls'
 
 WSGI_APPLICATION = 'tango_with_django_project_17.wsgi.application'
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 
 # Database
