@@ -1,5 +1,6 @@
 from django.conf.urls import url, include
 from rest import views
+from rest_framework.urlpatterns import format_suffix_patterns
 
 
 # Serializers define the API representation.
@@ -10,5 +11,6 @@ from rest import views
 urlpatterns = [
     url(r'^snip/$', views.snippet_list),
     url(r'^snip/(?P<pk>[0-9]+)/$', views.snippet_detail),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^cat/$', views.SnippetList.as_view()),
+    url(r'^cat/(?P<pk>[0-9]+)/$', views.SnippetDetail.as_view()),
 ]

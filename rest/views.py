@@ -5,6 +5,9 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 from rango.models import Category,Page
 from rest.serializer import RestSerializer
+from rango.models import Category,Page
+from rest.serializer import RestSerializer
+from rest_framework import generics
 
 class JSONResponse(HttpResponse):
     """
@@ -59,3 +62,13 @@ def snippet_detail(request, pk):
     elif request.method == 'DELETE':
         snippet.delete()
         return HttpResponse(status=204)
+
+
+class SnippetList(generics.ListCreateAPIView):
+    queryset = Category.objects.all()
+    serializer_class = RestSerializer
+
+
+class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Category.objects.all()
+    serializer_class = RestSerializer
