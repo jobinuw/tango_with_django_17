@@ -1,4 +1,4 @@
-#!C:\prueba\tangowd\ven\Scripts\python.exe
+#!c:\prueba\ven\scripts\python.exe
 #
 # The Python Imaging Library.
 # $Id$

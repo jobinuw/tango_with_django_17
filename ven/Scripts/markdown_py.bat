@@ -1,1 +1,1 @@
-@"C:\rest\ven\Scripts\python.exe" "C:\rest\ven\Scripts\markdown_py" %*
+@"C:\prueba\tangowd\ven\Scripts\python.exe" "C:\prueba\tangowd\ven\Scripts\markdown_py" %*
